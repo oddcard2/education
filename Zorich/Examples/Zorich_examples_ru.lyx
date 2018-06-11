@@ -1,0 +1,1546 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+III.
+ Предел
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+S
+\end_layout
+
+\end_inset
+
+ 1.
+ Предел последовательности
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $\lim_{n\to\infty}(\frac{1}{n})=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $\lim_{n\to\infty}\frac{n+1}{n}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ 
+\begin_inset Formula $\lim_{n\to\infty}(1+\frac{(-1)^{n}}{n})=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.
+ 
+\begin_inset Formula $\lim_{n\to\infty}\frac{\sin n}{n}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+5.
+ 
+\begin_inset Formula $\lim_{n\to\infty}\frac{1}{q^{n}},\ |q|>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+6.
+ Последовательность 
+\begin_inset Formula $1,2,\frac{1}{3},4\frac{1}{5},6,\frac{1}{7},...$
+\end_inset
+
+ c n-м членом 
+\begin_inset Formula $x_{m}=n^{(-1)^{n}},n\in\mathbb{N}$
+\end_inset
+
+ расходится
+\end_layout
+
+\begin_layout Standard
+7.
+ Аналогично для 
+\begin_inset Formula $x_{n}=(-1)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+8.
+ Показать, что последовательность 
+\begin_inset Formula $x_{n}=(-1)^{n}$
+\end_inset
+
+ не является фундаментальной
+\end_layout
+
+\begin_layout Standard
+9.
+ Проверить на сходимость последовательность конечных двоичных дробей
+\end_layout
+
+\begin_layout Standard
+10.
+ Проверить на сходимость последовательность 
+\begin_inset Formula $x_{n}=1+\frac{1}{2}+...+\frac{1}{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+11.
+ 
+\begin_inset Formula $\lim_{n\to\infty}\frac{n}{q^{n}}=0,\ q>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Следствие 1.
+ 
+\begin_inset Formula $\lim_{n\to\infty}\sqrt[n]{n}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Следствие 2.
+ 
+\begin_inset Formula $\lim\sqrt[n]{a}=1$
+\end_inset
+
+ при любом a > 0
+\end_layout
+
+\begin_layout Standard
+12.
+ 
+\begin_inset Formula $\lim_{n\to\infty}\frac{q^{n}}{n!}=0,\ q\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+13.
+ 
+\begin_inset Formula $\lim_{n\to\infty}(1+\frac{1}{n})^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+14.
+ Найти нижний и верхний пределы последовательности 
+\begin_inset Formula $x_{k}=(-1)^{k},\ k\in\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+15.
+ 
+\begin_inset Formula $x_{k}=k^{(-1)^{k}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+16.
+ 
+\begin_inset Formula $x_{k}=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+17.
+ 
+\begin_inset Formula $x_{k}=\frac{(-1)^{k}}{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+18.
+ 
+\begin_inset Formula $x_{k}=-k^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+19.
+ 
+\begin_inset Formula $x_{k}=(-1)^{k}k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+20.
+ Исследовать сходимость ряда 
+\begin_inset Formula $s_{n}=1+q+...+q^{n-1}=\frac{1-q^{n}}{1-q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+21.
+ Привести пример расходящегося ряда, члены которого стремятся к нулю.
+\end_layout
+
+\begin_layout Standard
+22.
+ Привести пример расходящегося ряда, из которого можно получить сходящийся
+ ряд, расставив скобки при суммировании и взяв частичные суммы внутри скобок
+ в качестве членов нового ряда.
+\end_layout
+
+\begin_layout Standard
+23.
+ Привести пример ряда, который сходится, но не сходится абсолютно
+\end_layout
+
+\begin_layout Standard
+24.
+ Показать сходимость ряда 
+\begin_inset Formula $\frac{1}{n^{2}},\ n\ge2$
+\end_inset
+
+ при помощи теоремы сравнения
+\end_layout
+
+\begin_layout Standard
+25.
+ Теорема сравнения и ряды с отрицательными члеными
+\end_layout
+
+\begin_layout Standard
+26.
+ Исследовать сходимость ряда 
+\begin_inset Formula $\sum\limits_{n=1}^{\infty}\frac{\sin n}{n^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+27.
+ Исследовать при каких 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ сходится ряд 
+\begin_inset Formula $\sum\limits_{n=1}^{\infty}(2+(-1)^{n})^{n}x^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+28.
+ Исследовать при каких 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ сходится ряд 
+\begin_inset Formula $\sum\limits_{n=1}^{\infty}\frac{1}{n!}x^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Дополнительно:
+\end_layout
+
+\begin_layout Standard
+Вывести формулу для ряда числа e, оценить абсолютную погрешностьи показать,
+ что число e иррационально
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+S
+\end_layout
+
+\end_inset
+
+2.
+ Предел функции
+\end_layout
+
+\begin_layout Standard
+1.
+ Проверить, что 
+\begin_inset Formula $\lim_{E\ni x\to0}x\sin\frac{1}{x}=0,$
+\end_inset
+
+ 
+\begin_inset Formula $E=\mathbb{R\0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ Показать, что у функции sgn(x) нет предела при 
+\begin_inset Formula $x\to0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ 
+\begin_inset Formula $\lim_{x\to0}|sgn(x)|=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.
+ Пример, того, что ограничение одной и той же функции на различные множества
+ могут иметь различные пределыв одной и той же точке
+\end_layout
+
+\begin_layout Standard
+5.
+ Имеет ли функция 
+\begin_inset Formula $\sin\frac{1}{x}$
+\end_inset
+
+предел при 
+\begin_inset Formula $x\to0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+6.
+ 
+\begin_inset Formula $E_{-}=\left\{ x\in\mathbb{R}\ |\ x=\frac{1}{-\pi/2+2\pi n},\ n\in\mathbb{N}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $E_{+}=\left\{ x\in\mathbb{R}\ |\ x=\frac{1}{\pi/2+2\pi n},\ n\in\mathbb{N}\right\} $
+\end_inset
+
+, найти предел из пример 5 при ограничении функции на указанные множества
+\end_layout
+
+\begin_layout Standard
+7.
+ Является ли функция 
+\begin_inset Formula $\sin\frac{1}{x}+x\cos\frac{1}{x}$
+\end_inset
+
+при 
+\begin_inset Formula $x\ne0$
+\end_inset
+
+ ограниченной? финально ограниченной?
+\end_layout
+
+\begin_layout Standard
+8.
+ Тоже самое для функции 
+\begin_inset Formula $f(x)=x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+9.
+ 
+\begin_inset Formula $\lim_{x\to0}\frac{\sin x}{x}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+10.
+ Определение показательной, логарифмической и степенной функции на основе
+ теории предела
+\end_layout
+
+\begin_layout Standard
+11-16.Примеры колебаний функций
+\end_layout
+
+\begin_layout Standard
+17.
+ Показать, что при 
+\begin_inset Formula $X=\mathbb{N}$
+\end_inset
+
+и 
+\begin_inset Formula $\mathscr{B}$
+\end_inset
+
+- база 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+, то общий критерий Коши существования предела функции совпадает с критерием
+ Коши для последовательности.
+\end_layout
+
+\begin_layout Standard
+18.
+ 
+\begin_inset Formula $\lim_{x\to0}\frac{\sin7x}{7x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+19.
+ 
+\begin_inset Formula $\lim_{y\to0}|sgn(y)|=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\to0}x\sin\frac{1}{x}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \space{}
+\end_inset
+
+Функция 
+\begin_inset Formula $|sgn(x\sin\frac{1}{x})|$
+\end_inset
+
+ не имеет предела при
+\begin_inset Formula $x\to0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+20.
+\begin_inset Formula $\lim_{x\to\infty}\left(1+\frac{1}{x}\right)^{x}=e$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+21.
+\begin_inset Formula $\lim_{t\to+\infty}(1+t)^{1/t}=e$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+22.
+\begin_inset Formula $\lim_{x\to+\infty}\frac{x}{q^{x}}=0$
+\end_inset
+
+, если 
+\begin_inset Formula $q>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+23.
+ 
+\begin_inset Formula $\lim_{x\to+\infty}\frac{\log_{a}x}{x}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+24.
+ 
+\begin_inset Formula $x^{2}=o(x)$
+\end_inset
+
+ при 
+\begin_inset Formula $x\to0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+25.
+ 
+\begin_inset Formula $x=o(x^{2})$
+\end_inset
+
+ при 
+\begin_inset Formula $x\to\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+26.
+ 
+\begin_inset Formula $x^{-2}$
+\end_inset
+
+ при 
+\begin_inset Formula $x\to\infty$
+\end_inset
+
+есть бесконечно малая более высокого порядка чем 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+27.
+ 
+\begin_inset Formula $x^{-2}$
+\end_inset
+
+ при 
+\begin_inset Formula $x\to0$
+\end_inset
+
+ есть бесконечно большая более высокого порядка чем 
+\begin_inset Formula $x^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+28.
+ 
+\begin_inset Formula $\lim_{x\to+\infty}\frac{x^{n}}{a^{x}}=0$
+\end_inset
+
+, при любом 
+\begin_inset Formula $n\in\mathbb{Z}$
+\end_inset
+
+и 
+\begin_inset Formula $a>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+29.
+ 
+\begin_inset Formula $\lim_{x\to+\infty}\frac{x^{\alpha}}{a^{x}}=0$
+\end_inset
+
+, при любом 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+ и 
+\begin_inset Formula $a>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+30.
+ 
+\begin_inset Formula $\lim_{R_{+}\ni x\to0}\frac{a^{-1/x}}{x^{\alpha}}$
+\end_inset
+
+, при любом 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+ и 
+\begin_inset Formula $a>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+31.
+ 
+\begin_inset Formula $\lim_{x\to+\infty}\frac{log_{\alpha}x}{x^{\alpha}}=0$
+\end_inset
+
+ при любом 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+32.
+ 
+\begin_inset Formula $x^{\alpha}\log_{\alpha}x=o(1)$
+\end_inset
+
+ при любом 
+\begin_inset Formula $\alpha>0$
+\end_inset
+
+, 
+\begin_inset Formula $x\in\mathbb{\mathbb{R}}_{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+33.
+ 
+\begin_inset Formula $\left(\frac{1}{x}+\sin x\right)x=O(x)$
+\end_inset
+
+ при 
+\begin_inset Formula $x\to\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+34.
+ 
+\begin_inset Formula $\left(2+\sin x\right)x$
+\end_inset
+
+ и 
+\begin_inset Formula $x$
+\end_inset
+
+ одного порядка при 
+\begin_inset Formula $x\to\infty$
+\end_inset
+
+, но функции 
+\begin_inset Formula $\left(1+\sin x\right)x$
+\end_inset
+
+ и 
+\begin_inset Formula $x$
+\end_inset
+
+ нет при той же базе
+\end_layout
+
+\begin_layout Standard
+35.
+ 
+\begin_inset Formula $x^{2}+x\sim x^{2}$
+\end_inset
+
+при 
+\begin_inset Formula $x\to\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+36.
+ Просто пример асимптотического закона распределения простых чисел: 
+\begin_inset Formula $\pi(x)=\frac{x}{\ln x}+o\left(\frac{x}{\ln x}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+37.
+ 
+\begin_inset Formula $\sin x=x+o(x)$
+\end_inset
+
+ при 
+\begin_inset Formula $x\to0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+38.
+ 
+\begin_inset Formula $\ln\left(1+x\right)\sim x$
+\end_inset
+
+ при 
+\begin_inset Formula $x\to0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+39.
+ 
+\begin_inset Formula $e^{x}=1+x+o(x)$
+\end_inset
+
+ при 
+\begin_inset Formula $x\to0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+40.
+ 
+\begin_inset Formula $\left(1+x\right)^{a}=1+ax+o(x)$
+\end_inset
+
+ при 
+\begin_inset Formula $x\to0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+41.
+ Найти 
+\begin_inset Formula $\lim_{x\to0}\frac{\ln\cos x}{\sin x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+42.
+\begin_inset Formula $\sqrt{x^{2}+x}\sim x$
+\end_inset
+
+ при 
+\begin_inset Formula $x\to+\infty$
+\end_inset
+
+, но показать, что 
+\begin_inset Formula $\lim_{x\to+\infty}(\sqrt{x^{2}+x}-x)\ne\lim_{x\to+\infty}(x-x)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Найти предел 
+\begin_inset Formula $\lim_{x\to+\infty}(\sqrt{x^{2}+x}-x)$
+\end_inset
+
+ используя разложение из примера 40 и правила работы с o и O (
+\begin_inset Quotes eld
+\end_inset
+
+прямой метод
+\begin_inset Quotes erd
+\end_inset
+
+) и более хитрым способом приведения устранения иррациональности из числителя.
+\end_layout
+
+\begin_layout Standard
+Привести примеры разложения элементарных функциий в ряды со страницы 133
+ (которые автор рекомендует запомнить как таблицу умножения, т.к.
+ эти разложения 
+\begin_inset Quotes eld
+\end_inset
+
+являются наиболее эффективным средством для отыскания пределов элементарных
+ функций
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+43.
+ 
+\begin_inset Formula $\lim_{x\to0}\frac{x-\sin x}{x^{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+44.
+ 
+\begin_inset Formula $\lim_{x\to\infty}x^{2}\left(\sqrt[7]{\frac{x^{3}+x}{1+x^{3}}-cos\frac{1}{x}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+45.
+ 
+\begin_inset Formula $\lim_{x\to\infty}\left[\frac{1}{e}\left(1+\frac{1}{x}\right)^{x}\right]^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Глава IV.
+ Непрерывные функции
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+S
+\end_layout
+
+\end_inset
+
+1.
+ Основные определения и примеры 
+\end_layout
+
+\begin_layout Standard
+1.
+ 
+\begin_inset Formula $f:\ E\rightarrow\mathbb{R}$
+\end_inset
+
+- постоянная функция, то 
+\begin_inset Formula $f\in C(E)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $f(x)=x$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ 
+\begin_inset Formula $f(x)=\sin x$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.
+ 
+\begin_inset Formula $f(x)=\cos x$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+5.
+ 
+\begin_inset Formula $f(x)=a^{x}$
+\end_inset
+
+ непрерывна на 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+7.
+ Любая последовательность 
+\begin_inset Formula $f:\ \mathbb{N\rightarrow\mathbb{R}}$
+\end_inset
+
+ непрерывана на 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+8.
+ Найти точки разрыва 
+\begin_inset Formula $f(x)=sgn(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+9.
+ Найти точки разрыва 
+\begin_inset Formula $f(x)=|sgn(x)$
+\end_inset
+
+|
+\end_layout
+
+\begin_layout Standard
+10.
+ Показать, что 0 - точка разрыва функции 
+\begin_inset Formula $\begin{cases}
+\sin\frac{1}{x},x\ne0 & 0,x=0\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+S
+\end_layout
+
+\end_inset
+
+2.
+ Свойства непрерывных функций
+\end_layout
+
+\begin_layout Standard
+1.
+ Алгебраический многочлен является непрерывной функцией на 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ Рациональная функция (отношение полиновов) непрерывна всюду, определена.
+\end_layout
+
+\begin_layout Standard
+3.
+ Композиция конечного числа непрерывных функций непрерывна в любой точке
+ области своего определения.
+\end_layout
+
+\begin_layout Standard
+4.
+ Функция 
+\begin_inset Formula $f(x)=\sin\frac{1}{x}$
+\end_inset
+
+ непрерывна на интервале (0,1), показать, что она не является непрерывной
+ в точке 0.
+\end_layout
+
+\begin_layout Standard
+5.
+ Если функция не ограничена в любой окрестности фиксированной точки, то
+ она не является равномерно непрерывной (привести пример)
+\end_layout
+
+\begin_layout Standard
+6.
+ Показать, что функция 
+\begin_inset Formula $f(x)=x^{2}$
+\end_inset
+
+не является равномерно непрерывной
+\end_layout
+
+\begin_layout Standard
+7.
+ Показать, что функция 
+\begin_inset Formula $f(x)=x^{2}$
+\end_inset
+
+не является равномерно непрерывной, хотя она непрерывна и ограничена на
+ R
+\end_layout
+
+\begin_layout Standard
+8.
+ Существование функции обратной 
+\begin_inset Formula $\sin x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+9.
+ Существование функции обратной 
+\begin_inset Formula $\cos x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+10.
+ Существование функции обратной 
+\begin_inset Formula $tgx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+11.
+ Существование функции обратной 
+\begin_inset Formula $ctg$
+\end_inset
+
+x
+\end_layout
+
+\begin_layout Standard
+Построение графика обратной функции
+\end_layout
+
+\begin_layout Standard
+Глава V.
+ Дифференциальное исчисление
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+S
+\end_layout
+
+\end_inset
+
+1.
+ Дифферецируемая функция
+\end_layout
+
+\begin_layout Standard
+1.
+ Найти 
+\begin_inset Formula $\sin'x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+2.
+ 
+\begin_inset Formula $\cos'x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ Найти производную 
+\begin_inset Formula $f(t)=r\cos\omega t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.
+ Найти производную 
+\begin_inset Formula $f(t)=r\sin\omega t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+5.
+ Мгновенная скорость и ускорение материальной точки
+\end_layout
+
+\begin_layout Standard
+6.
+ Показать, что волновой источник, помещенный в точке 
+\begin_inset Formula $\left(0,\frac{p}{2}\right)$
+\end_inset
+
+- фокусе параболического зеркала (
+\begin_inset Formula $y=\frac{1}{2p}x^{2}(p>0))$
+\end_inset
+
+, даст пучок, параллельный оси Oy зеркала, а приходящий параллельно оси
+ Oy пучок зеркало пропустит через фокус.
+\end_layout
+
+\begin_layout Standard
+7.
+ Показать, что касательная является 
+\begin_inset Quotes eld
+\end_inset
+
+всего-навсего
+\begin_inset Quotes erd
+\end_inset
+
+ лучшим линейным приближением графика функции в окрестности точки касания
+ и вовсе не обязана иметь с ним одну общую точку, как в случаевыпуклых кривых,
+ таких как окружность.
+\end_layout
+
+\begin_layout Standard
+8.
+ 
+\begin_inset Formula $f(x)=|x|$
+\end_inset
+
+, показать, что функция не имеет производной в точке 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+9.
+ 
+\begin_inset Formula $e^{x+h}-e^{x}=e^{x}h+o(h)$
+\end_inset
+
+ при 
+\begin_inset Formula $h\to0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+10.
+ 
+\begin_inset Formula $a^{x+h}-a^{x}=a^{x}\ln ah+o(h)$
+\end_inset
+
+ при 
+\begin_inset Formula $h\to0$
+\end_inset
+
+ и 
+\begin_inset Formula $a>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+11.
+ 
+\begin_inset Formula $\ln|x+h|-\ln|x|=\frac{1}{x}h+o(h)$
+\end_inset
+
+ при 
+\begin_inset Formula $h\to0$
+\end_inset
+
+ и 
+\begin_inset Formula $x\ne0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+12.
+ 
+\begin_inset Formula $\log_{a}|x+h|-\log_{a}|x|=\frac{1}{x\ln a}h+o(h)$
+\end_inset
+
+ при 
+\begin_inset Formula $h\to0,\ x\ne0,\ 0<a\ne1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+S
+\end_layout
+
+\end_inset
+
+2.
+ Основные правила дифференцирования
+\end_layout
+
+\begin_layout Standard
+1.
+ Инвариантность определения скорости
+\end_layout
+
+\begin_layout Standard
+2.
+ Найти производную 
+\begin_inset Formula $tgx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+3.
+ 
+\begin_inset Formula $ctgx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+4.
+ полинома
+\end_layout
+
+\begin_layout Standard
+5.
+ Показать, что 
+\begin_inset Formula $\frac{dx^{a}}{dx}=ax^{a-1}$
+\end_inset
+
+ при 
+\begin_inset Formula $x\in\mathbb{R},\ x>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+6.
+ Логарифмическая производная
+\end_layout
+
+\begin_layout Standard
+7.
+ Абсолютная и относительная погрешности значения дифференцируемой функции,
+ вызванные погрешностями в задании аргумента.
+ Логарифмическая линейка.
+\end_layout
+
+\begin_layout Standard
+8.
+ Найти производную 
+\begin_inset Formula $u(x)^{v(x)},$
+\end_inset
+
+ где 
+\begin_inset Formula $u(x),\ v(x)$
+\end_inset
+
+ - дифференцируемые функциии и 
+\begin_inset Formula $u(x)>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+9.
+ Найти 
+\begin_inset Formula $arcsin'y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+10.
+ 
+\begin_inset Formula $arccos'y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+11.
+ 
+\begin_inset Formula $arctg'y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+12.
+ 
+\begin_inset Formula $arcctg'y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+13.
+ Проверить как 
+\begin_inset Formula $y=a^{x}$
+\end_inset
+
+и 
+\begin_inset Formula $x=f^{-1}(y)=\log_{a}x$
+\end_inset
+
+ согласуются с теоремой о производной обратной функции
+\end_layout
+
+\begin_layout Standard
+14.
+ Гиперболические обратные функции
+\end_layout
+
+\begin_layout Standard
+15.
+ Дифференцирование простейшей неявно заданной функции.
+ Закон сложения скоростей
+\end_layout
+
+\begin_layout Standard
+16-23.
+ Примеры вычисления производных высших порядков.
+\end_layout
+
+\begin_layout Standard
+24.
+ Формула Лейбница
+\end_layout
+
+\begin_layout Standard
+25.
+ Представление полинома через производные высших порядков.
+\end_layout
+
+\begin_layout Standard
+26.
+ Найти n-ую производную функции 
+\begin_inset Formula $f(x)=x^{2}\sin x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+27.
+ Найти n-ую производную функции 
+\begin_inset Formula $f(x)=arctgx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+28.
+ Ускорение
+\end_layout
+
+\begin_layout Standard
+29.
+ Вторая производная простейшей неявно заданной функции.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+S
+\end_layout
+
+\end_inset
+
+3.
+ Основные теоремы дифференциального исчисления.
+\end_layout
+
+\begin_layout Standard
+1.
+ Лемма Ферма и теорема Ролля.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
