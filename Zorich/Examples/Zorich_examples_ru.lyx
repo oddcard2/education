@@ -324,7 +324,7 @@ S
 \begin_layout Standard
 26.
  Исследовать сходимость ряда 
-\begin_inset Formula $\sum\limits_{n=1}^{\infty}\frac{\sin n}{n^{2}}$
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}\frac{\sin n}{n^{2}}$
 \end_inset
 
 
@@ -337,7 +337,7 @@ S
 \end_inset
 
  сходится ряд 
-\begin_inset Formula $\sum\limits_{n=1}^{\infty}(2+(-1)^{n})^{n}x^{n}$
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}(2+(-1)^{n})^{n}x^{n}$
 \end_inset
 
 
@@ -350,7 +350,7 @@ S
 \end_inset
 
  сходится ряд 
-\begin_inset Formula $\sum\limits_{n=1}^{\infty}\frac{1}{n!}x^{n}$
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}\frac{1}{n!}x^{n}$
 \end_inset
 
 
@@ -1539,6 +1539,107 @@ S
 \end_layout
 
 \begin_layout Standard
+11.
+ Найти полином для вычисления 
+\begin_inset Formula $\sin x$
+\end_inset
+
+с абсолютной погрешностью, не превышающей 
+\begin_inset Formula $10^{-3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+12.
+ Показать, что 
+\begin_inset Formula $\tan x=x+\frac{1}{3}x^{3}+o(x^{3})$
+\end_inset
+
+ при 
+\begin_inset Formula $x\to0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+13.
+ Исследовать сходимость 
+\begin_inset Formula $\sum\limits _{n=1}^{\infty}\ln\cos\frac{1}{n^{a}}$
+\end_inset
+
+, 
+\begin_inset Formula $a>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+14.
+ Показать, что 
+\begin_inset Formula $\ln\cos x=-\frac{1}{2}x^{2}-\frac{1}{12}x^{4}-\frac{1}{45}x^{6}+O(x^{8})$
+\end_inset
+
+ при 
+\begin_inset Formula $x\to0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+15.
+ Найти значения первых шести производных функции 
+\begin_inset Formula $\ln\cos x$
+\end_inset
+
+ при 
+\begin_inset Formula $x=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+16.
+ Найти разложение бесконечно дифференцируемой в точке 
+\begin_inset Formula $x_{0}=0$
+\end_inset
+
+ функции в ряд в окрестности 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+, если известно разложение её производной в окрестности нуля.
+\end_layout
+
+\begin_layout Standard
+17.
+ Найти тейлоровское разложение 
+\begin_inset Formula $\arctan x$
+\end_inset
+
+ в нуле.
+\end_layout
+
+\begin_layout Standard
+18.
+ Найти тейлоровское разложение 
+\begin_inset Formula $\arcsin x$
+\end_inset
+
+ в нуле.
+\end_layout
+
+\begin_layout Standard
+19.
+ Найти 
+\begin_inset Formula $\lim_{x\to0}\frac{\arctan x-\sin x}{\tan x-\arcsin x}$
+\end_inset
+
 
 \end_layout
 
