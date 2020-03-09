@@ -2,7 +2,7 @@
 
 import sys
 import os.path
-from random import shuffle
+import random
 
 class DictionaryException(Exception):
     pass
@@ -21,7 +21,7 @@ class Dictionary:
         self.words = []
         
     def create_test(self, create_recordings):
-        self.__load()
+        self.load()
         self.__shuffle()
 
         self.__create_text_test()
@@ -31,7 +31,23 @@ class Dictionary:
 
         self.__create_rec_test()
 
-    def __load(self):
+    # return tuple (list of max_cnt translations shuffled, word_idx)
+    def get_translations(self, max_cnt=1):
+        word_idx =random.randint(0, len(self.words))
+
+        if max_cnt == -1:
+            traslations_idicies = range(len(self.words[word_idx].translations)+1)
+            random.shuffle(traslations_idicies)
+        else:
+            traslations_idicies = random.sample(range(len(self.words[word_idx].translations)+1), max_cnt)
+        translations = [self.words[word_idx].translations[idx] for idx in traslations_idicies]
+
+        return (translations, word_idx)
+
+    def get_result(self, idx):
+        return self.words[idx].word
+
+    def load(self):
         with open(self.test_file_path, 'r') as f:
             for line in f:
                 line = line.strip()
@@ -73,7 +89,7 @@ class Dictionary:
         pass
         
     def __shuffle(self):
-        shuffle(self.words)
+        random.shuffle(self.words)
         
     def __get_rec_path(self, word):
         word_rec_path = os.path.join(self.dir_path, word + '.mp3')
@@ -83,11 +99,37 @@ class Dictionary:
 
 if __name__ == '__main__':
     if len(sys.argv) < 2:
+        print('Welcome to interactive mode, type q for exit\n')
         print("Use create_test.py DICT_DIR_PATH [rec]")
         print('For example:')
         print('\tcreate_test.py ../dict1')
         print('\tcreate_test.py ../dict1 rec')
-        sys.exit()
+
+        print('Enter dictionary directory:')
+        dict_dir = sys.stdin.readline()
+        dict_dir = dict_dir.strip()
+        
+        dict = Dictionary(dict_dir)
+        dict.load()
+
+        while True:
+            data = dict.get_translations(1)
+
+            for t in data[0]:
+                print(t)
+            print('')
+
+            answer = sys.stdin.readline()
+            answer = answer.strip()
+            if answer == 'q':
+                sys.exit()
+
+            result = dict.get_result(data[1])
+            if answer == result:
+                print('YES\n')
+            else:
+                print('NO, {0}\n'.format(result))
+
     
     rec = False
     if len(sys.argv) >= 3:
