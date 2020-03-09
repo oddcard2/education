@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 import os.path
 from random import shuffle
@@ -18,7 +20,18 @@ class Dictionary:
         self.test_file_path = os.path.join(self.dir_path, self.words_file_name)
         self.words = []
         
-    def load(self):
+    def create_test(self, create_recordings):
+        self.__load()
+        self.__shuffle()
+
+        self.__create_text_test()
+        
+        if not create_recordings:
+            return
+
+        self.__create_rec_test()
+
+    def __load(self):
         with open(self.test_file_path, 'r') as f:
             for line in f:
                 line = line.strip()
@@ -29,34 +42,42 @@ class Dictionary:
                 parts = line.split(';')
                 if len(parts) < 2:
                     raise DictionaryException('Invalid words file line format - shortage of parts')
-                
+
                 word = parts[0].strip()
                 translations = [t.strip() for t in parts[1:]]
                 word_rec_path = self.__get_rec_path(word)
                 self.words.append(Word(word, translations, word_rec_path))
-                
-        
-    def create_test(self, create_recordings):
-        self.__shuffle()
+
+    def __create_text_test(self):
         # creates 3 files - words.txt, translations.txt and result.txt
-        
-        if not create_recordings:
-            return
-            
+        with open('words.txt', 'w') as f:
+            pass
+
+        words = [w.word+'\n' for w in self.words]
+        with open('result.txt', 'w') as f:
+            f.writelines(words)
+
+        translations = [t+'\n' for t in [';'.join(w.translations) for w in self.words]]
+        with open('translations.txt', 'w') as f:
+            f.writelines(translations)
+
+
+    def __create_rec_test(self):
         # remove directory 'rec' with content if it exists
-        
+
         # create 'rec' directory
-        
+
         # copy files as 1.mp3, 2.mp3, ...
-   
+
         # create files rec_words.txt and rec_result.txt
+        pass
         
     def __shuffle(self):
         shuffle(self.words)
         
     def __get_rec_path(self, word):
         word_rec_path = os.path.join(self.dir_path, word + '.mp3')
-        if not os.path.isfile(word_rec_path)
+        if not os.path.isfile(word_rec_path):
             return None
         return word_rec_path
 
@@ -73,4 +94,8 @@ if __name__ == '__main__':
         rec = True
         
     dict_dir_path = sys.argv[1]
+
+    dict = Dictionary(dict_dir_path)
+    dict.create_test(False)
+
     
