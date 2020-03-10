@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import sys
+import os
 import os.path
 import random
 
@@ -33,13 +34,13 @@ class Dictionary:
 
     # return tuple (list of max_cnt translations shuffled, word_idx)
     def get_translations(self, max_cnt=1):
-        word_idx =random.randint(0, len(self.words))
+        word_idx = random.randint(0, len(self.words)-1)
 
         if max_cnt == -1:
-            traslations_idicies = range(len(self.words[word_idx].translations)+1)
+            traslations_idicies = range(len(self.words[word_idx].translations))
             random.shuffle(traslations_idicies)
         else:
-            traslations_idicies = random.sample(range(len(self.words[word_idx].translations)+1), max_cnt)
+            traslations_idicies = random.sample(range(len(self.words[word_idx].translations)), max_cnt)
         translations = [self.words[word_idx].translations[idx] for idx in traslations_idicies]
 
         return (translations, word_idx)
@@ -104,6 +105,11 @@ if __name__ == '__main__':
         print('For example:')
         print('\tcreate_test.py ../dict1')
         print('\tcreate_test.py ../dict1 rec')
+
+        script_dir = os.path.dirname(os.path.realpath(__file__))
+        os.chdir(script_dir)
+        # cwd = os.getcwd()
+        # print('Script directory: {0}, current directory = {1}'.format(script_dir, cwd))
 
         print('Enter dictionary directory:')
         dict_dir = sys.stdin.readline()
