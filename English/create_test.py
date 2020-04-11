@@ -23,6 +23,15 @@ class Word(object):
         self.transcriptions = transcriptions
         self.score = score
 
+    def print(self):
+        print(self.word, end = ' ')
+        if self.transcriptions:
+            print('({0})'.format(self.transcriptions[0]))
+        else:
+            print('')
+        for i, t in enumerate(self.translations):
+            print('\t{0}. {1}'.format(i+1, t))
+
 class Question(object):
     def __init__(self, index):
         self.help_done = False
@@ -46,10 +55,13 @@ class Dictionary:
     def clear_stat(self, index):
         self.words[index].score = self.init_score
 
+    # returns True if word is removed, False otherwise
     def decrease_score(self, index, val = 1):
         self.words[index].score -= val
         if self.words[index].score == 0:
             self.remove_word(index)
+            return True
+        return False
 
     def increase_index(self, index, val =  2):
         self.words[index].score += val
@@ -58,6 +70,12 @@ class Dictionary:
         if idx >= len(self.words):
             return 0
         return self.words[idx].score
+
+    def get_words_count(self):
+        return len(self.words)
+
+    def get_score_sum(self):
+        return sum([w.score for w in self.words])
 
     def create_test(self, create_recordings):
         self.load()
@@ -103,6 +121,9 @@ class Dictionary:
             return self.get_translations(max_cnt)
         else:
             return self.get_transcriptions(max_cnt)
+
+    def get_word(self, idx):
+        return self.words[idx]
 
     def get_result(self, idx):
         return self.words[idx].word
@@ -205,19 +226,14 @@ def add_last_directory(last_dirs, d, limit):
         idx = last_dirs.index(d)
         elem = res[idx]
     except ValueError:
+        if len(res) < limit:
+            res.append('')
         elem = d
-        idx = -1
+        idx = len(res)-1 # shift all list to right
 
-    if idx != 0:
-        for i in range(idx-1, -1, -1): # shifts to right up to found elem
-            res[i+1] = res[i]
-        if not len(res):
-            res = [elem]
-        else:
-            res[0] = elem
-
-    if idx == -1 and len(last_dirs) > limit and limit > 0:
-        del res[-1]
+    for i in range(idx-1, -1, -1): # shifts to right up to found or last elem
+        res[i+1] = res[i]
+    res[0] = elem
     return res
 
 def save_last_directories(file_path, last_dirs):
@@ -272,7 +288,7 @@ if __name__ == '__main__':
                 print('Error during loading: {0}'.format(e))
                 continue
 
-            last_dirs = add_last_directory(last_dirs, dict_dir, 9)
+            last_dirs = add_last_directory(last_dirs, dict_dir, 10)
             save_last_directories(last_dirs_file, last_dirs)
 
             # prints number of words, transcriptions and audio files
@@ -336,14 +352,20 @@ if __name__ == '__main__':
                     else:
                         print('Hint is unavailable, enter your answer:\n'.format(res))
 
-                result = dict.get_result(idx)
+                w = dict.get_word(idx)
+                result = w.word
                 if answer == result:
                     if not hint_used:
                         dict.decrease_score(idx)
-                    print('RIGHT! Score = {0}\n'.format(dict.get_word_score(idx)))
+                    print('RIGHT! Score = {0}, words = {1}, total score = {2}\n'.format(
+                        w.score, dict.get_words_count(), dict.get_score_sum()))
                 else:
                     dict.increase_index(idx, 2)
-                    print('WRONG, correct = "{0}", score = {1}\n'.format(result, dict.get_word_score(idx)))
+                    print('WRONG, correct = "{0}", score = {1}, words = {2}, total score = {3}\n'.format(
+                        result, w.score, dict.get_words_count(), dict.get_score_sum()))
+
+                w.print()
+                print('')
 
     else:
         rec = False
