@@ -7,6 +7,14 @@ import random
 from enum import Enum
 
 
+RED = "\033[1;31m"
+BLUE = "\033[1;34m"
+CYAN = "\033[1;36m"
+GREEN = "\033[0;32m"
+RESET = "\033[0;0m"
+BOLD = "\033[;1m"
+REVERSE = "\033[;7m"
+
 class TestType(Enum):
     translation = 1
     transcription = 2
@@ -38,12 +46,12 @@ class Question(object):
         self.index = index
 
 class Dictionary:
-    def __init__(self, dir_path):
+    def __init__(self, dir_path, init_score=3):
         self.dir_path = dir_path
         self.words_file_name = 'words.txt'
         self.test_file_path = os.path.join(self.dir_path, self.words_file_name)
         self.words = []
-        self.init_score = 3
+        self.init_score = init_score
         self.test_type = TestType.translation
 
     def set_test_type(self, type):
@@ -280,8 +288,14 @@ if __name__ == '__main__':
                     continue
                 else:
                     dict_dir = last_dirs[idx]
+            
+            init_score=3  
+            print('Enter score limit (empty = 3):')
+            init_score_str = sys.stdin.readline().strip()
+            if init_score_str and init_score_str.isnumeric():
+                init_score = int(init_score_str)
 
-            dict = Dictionary(dict_dir)
+            dict = Dictionary(dict_dir, init_score)
             try:
                 dict.load()
             except Exception as e:
@@ -357,11 +371,17 @@ if __name__ == '__main__':
                 if answer == result:
                     if not hint_used:
                         dict.decrease_score(idx)
-                    print('RIGHT! Score = {0}, words = {1}, total score = {2}\n'.format(
+                    sys.stdout.write(GREEN)
+                    print('RIGHT!', end=' ')
+                    sys.stdout.write(RESET)
+                    print('Score = {0}, words = {1}, total score = {2}\n'.format(
                         w.score, dict.get_words_count(), dict.get_score_sum()))
                 else:
                     dict.increase_index(idx, 2)
-                    print('WRONG, correct = "{0}", score = {1}, words = {2}, total score = {3}\n'.format(
+                    sys.stdout.write(RED)
+                    print('WRONG!', end=' ')
+                    sys.stdout.write(RESET)
+                    print('correct = "{0}", score = {1}, words = {2}, total score = {3}\n'.format(
                         result, w.score, dict.get_words_count(), dict.get_score_sum()))
 
                 w.print()
